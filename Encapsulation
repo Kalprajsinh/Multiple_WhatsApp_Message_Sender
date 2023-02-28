@@ -1,0 +1,36 @@
+-  Encapsulation is wrapping the data (variables) and code acting on the data (methods) together as a single unit.
+-  In encapsulation, the variables of a class will be hidden from other classes, and 
+   can be accessed only through any member function of own class
+-  Encapsulation helps us in binding the member functions and data of a class.
+-  it also helps us make code flexible, which is easy to change and maintain.
+
+
+Example:-
+
+#include <iostream>
+using namespace std;
+class Encapsulation {
+
+private:
+    int x;
+
+public:
+    void set(int a) { 
+           x = a;
+           }
+    int get() {
+          return x; 
+          }
+};
+ 
+int main()
+{
+    Encapsulation obj;
+    obj.set(5);
+    cout << obj.get();
+    return 0;
+}
+
+
+First, make all the data members private.
+Then getter and setter functions should be performed for each data member.
